@@ -2,7 +2,7 @@ name: Run Java Tests
 on:
   push:
     branches:
-        - main
+      - main
 
   jobs:
     test:
