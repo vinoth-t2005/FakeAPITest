@@ -114,6 +114,6 @@ public class fakeAPITest {
         RestAssured.given()
                 .pathParams("id",id)
                 .when().delete("/categories/{id}")
-                .then().statusCode(200);
+                .then().statusCode(201);
     }
 }
