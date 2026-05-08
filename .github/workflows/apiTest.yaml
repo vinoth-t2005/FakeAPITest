@@ -17,4 +17,21 @@ jobs:
             java-version: 21
 
       - run: mvn test
+      - name: send_html_report_mail
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_code: 465
+          sercure: true
+
+          username: ${{secrets.MAIL_USERNAME}}
+          password: ${{secrets.PASSWORD}}
+
+          subjects: Automation Test Report
+
+          to: vinothking.com@gmail.com
+          from: Github Actions
+
+          html_body: target/surefire-reports/emailable-report.html
+
 
