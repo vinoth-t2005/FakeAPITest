@@ -22,7 +22,7 @@ jobs:
         with:
           server_address: smtp.gmail.com
           server_port: 465
-          sercure: true
+          secure: true
 
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.PASSWORD}}
