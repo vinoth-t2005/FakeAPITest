@@ -27,7 +27,7 @@ jobs:
           username: ${{secrets.MAIL_USERNAME}}
           password: ${{secrets.PASSWORD}}
 
-          subjects: Automation Test Report
+          subject: Automation Test Report
 
           to: vinothking.com@gmail.com
           from: Github Actions
